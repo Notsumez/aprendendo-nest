@@ -23,4 +23,4 @@ Content-Type: application/json
 }
 
 ### Delete Developer
-DELETE http://localhost:3000/developers/dev_NbVs1Snod1wzWNXe0nkfv
+DELETE http://localhost:3000/developers/dev_GJeiijJs_pEYcXg87E4y9

@@ -28,7 +28,7 @@ export class DevelopersService {
   async update(id: string, dto: UpdateDeveloperDto) {
     const developer = await this.repository.findOneBy({ id });
     if (!developer) {
-      throw new Error('Developer not found');
+      return null;
     }
     this.repository.merge(developer, dto);
     return this.repository.save(developer);
@@ -37,7 +37,7 @@ export class DevelopersService {
   async remove(id: string) {
     const developer = await this.repository.findOneBy({ id });
     if (!developer) {
-      throw new Error('Developer not found');
+      return null;
     }
     return this.repository.remove(developer);
   }
