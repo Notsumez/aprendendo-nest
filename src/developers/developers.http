@@ -10,17 +10,17 @@ Content-Type: application/json
 
 {
   "name": "Jane Doe",
-  "email": "jane.doe@example.com",
+  "email": "john.c.calhoun@example.com",
   "dateOfBirth": "1995-05-15"
 }
 
 ### Update Developer
-PATCH http://localhost:3000/developers/1
+PATCH http://localhost:3000/developers/dev_qMWn4eRcEWOPTaFk0m6Kx
 Content-Type: application/json
 
 {
-  "email": "jane.doe@example.com"
+  "email": "test@example.com"
 }
 
 ### Delete Developer
-DELETE http://localhost:3000/developers/3
+DELETE http://localhost:3000/developers/dev_NbVs1Snod1wzWNXe0nkfv
